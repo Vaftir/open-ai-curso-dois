@@ -17,3 +17,9 @@ def salva(nome_do_arquivo, conteudo):
             arquivo.write(conteudo)
     except IOError as e:
         print(f"Erro ao salvar arquivo: {e}")
+
+
+def encodar_imagens(caminho_imagem):
+    with open(caminho_imagem, "rb") as arquivo_imagem:
+        imagem_codificada = base64.b64encode(arquivo_imagem.read()).decode("utf-8")
+        return imagem_codificada

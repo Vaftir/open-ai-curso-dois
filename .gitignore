@@ -2,3 +2,4 @@
 *.env
 curso_2_openai/
 venv/
+assistentes.json

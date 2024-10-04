@@ -13,8 +13,9 @@ from tools_ecomart import *
 load_dotenv()
 
 cliente = OpenAI(api_key=os.getenv("OPENAI_API_KEY_TEST"))
-modelo = "gpt-4-1106-preview"
-contexto = carrega("dados/ecomart.txt")
+# modelo = "gpt-4-1106-preview"
+modelo = "gpt-4o-mini"
+contexto = carrega("data/ecomart.txt")
 
 
 
